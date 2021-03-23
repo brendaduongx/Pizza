@@ -23,11 +23,32 @@ header li {
   justify-content: space-around;
 }
 
+.containerGrid {
+  display: grid;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.skills {
+  max-width: 500px;
+  border-radius: 15px;
+  margin: 10;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+
 
 li:hover {
   color: rgb(247, 115, 115);
 }
 
+button:hover {
+  background-color: rgb(255, 91, 91);
+}
 
 .heroImg {
   background-color: #EBEBEB;
@@ -53,7 +74,13 @@ button {
   font-family: 'Nunito', sans-serif;
 }
 
+.workGrid {
+  align-items: center;
+}
 
+#myWork {
+  align-items: center;
+}
 
 footer {
   background-color: #d6d6d6;
@@ -76,3 +103,100 @@ footer li {
   padding: 0px 7px;
 }
 
+
+
+
+
+
+ 
+.flex_item {
+  padding:10px;
+  margin: 10px;
+  height: 150px; width: 150px;
+  background-color: #ff8b8b;
+  color: white;
+  justify-content: center;
+  border-radius: 100px;
+ }
+ .flex {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+ }
+ #column {
+  background-color: #ffffff;
+  flex-direction: column;
+ }
+ #row {
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ 
+
+
+
+
+
+
+
+ 
+.column {
+  display: flex;
+  justify-content: center;
+  height: 1200px;
+  width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+ }
+  
+ .project1, .project2, .project3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+ }
+ .project1 {
+  margin-top:20px;
+  background-image: url("../images/dosbot.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  
+ }
+ .project2 {
+  background-image: url("../images/placeholder_pic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+ .project3 {
+  background-image: url("../images/ppf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+  
+ .text {
+  background: #ebebeb96;
+  width: 100%;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: baseline;
+  color: rgb(27, 27, 27);
+ }
+ .text p {
+  color: rgb(27, 27, 27);
+  font-family: 'Nunito', sans-serif;
+ }
+ .text h1 {
+  font-family: 'Nunito', sans-serif;
+ }
+ 
+
+@media only screen and (max-width: 600px) {
+  .column {
+    position: static;
+    margin: 20px;
+  }}
